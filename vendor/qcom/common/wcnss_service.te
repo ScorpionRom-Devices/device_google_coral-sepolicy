@@ -35,3 +35,5 @@ r_dir_file(wcnss_service, sysfs_ssr)
 r_dir_file(wcnss_service, sysfs_esoc)
 dontaudit wcnss_service sysfs_faceauth:dir search;
 dontaudit wcnss_service sysfs_faceauth:file { open read };
+
+allow wcnss_service sysfs_net:dir r_dir_perms;

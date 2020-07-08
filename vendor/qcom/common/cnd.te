@@ -61,5 +61,7 @@ userdebug_or_eng(`
   allow cnd diag_device:chr_file rw_file_perms;
 ')
 
+allow cnd hostapd_exec:file x_file_perms;
+
 # For WFC call(RAT change into IWLAN)
 binder_call(cnd, qtidataservices_app)
