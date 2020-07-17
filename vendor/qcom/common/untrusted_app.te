@@ -10,3 +10,4 @@ allow untrusted_app proc_net:file read;
 allow untrusted_app proc_pid_max:file read;
 allow untrusted_app rootfs:dir read;
 allow untrusted_app vendor_default_prop:file read;
+allow untrusted_app vendor_aware_available_prop:file read;
